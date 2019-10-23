@@ -109,9 +109,9 @@ void printaCabecalho(int numVoos, int numAprox, lista *voos){
             printf("D - BAIXA]\n");
         }
     }
-    printf("NVoos: %d\n", numVoos);
-    printf("Naproximações: %d\n", numAprox);
-    printf("NDecolagens: %d\n",(numVoos-numAprox));
+    printf("Numero de Voos: %d\n", numVoos);
+    printf("Numero de aproximações: %d\n", numAprox);
+    printf("Numero de Decolagens: %d\n",(numVoos-numAprox));
     printf("---------------------------------------------------------------------------------\n");
 }
 
@@ -172,6 +172,7 @@ void liberaFila(fila *v){
 }
 
 
+/* Função responsável por gerar um número aleatório entre inicio e final*/
 int geraNumAleatorio(int inicio, int final){
     int numero = (rand() % (final - inicio + 1)) + inicio;
 
